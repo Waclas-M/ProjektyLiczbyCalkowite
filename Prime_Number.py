@@ -1,6 +1,6 @@
 #Did this number is Prime number?
 #Prime numer = numer // 1 and // number
-def Prime_number(number):
+def Prime(number):
     solution = []
     for x in range(1,number+1):
          remnant = number % x
