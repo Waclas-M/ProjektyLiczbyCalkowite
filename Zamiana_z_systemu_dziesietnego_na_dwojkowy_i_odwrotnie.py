@@ -2,12 +2,15 @@
 #Dziesietny do dwojkowego
 def Ten_to_two(number):
     solution = []
+    odp = ''
     while number>0:
         result = number % 2
         solution.append(result)
         number = number//2
     solution.reverse()
-    return solution
+    for x in solution:
+        odp += str(x)
+    return odp
 
 
 #print(Ten_to_two(43))
