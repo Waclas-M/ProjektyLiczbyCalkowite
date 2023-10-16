@@ -1,4 +1,4 @@
-def Eulkides(number,divider):
+def Euklides(number,divider):
     solution = []
 
     while number >1:
@@ -12,4 +12,3 @@ def Eulkides(number,divider):
     return solution.pop(len(solution)-2)
 
 
-print(Eulkides(150,240))

@@ -1,18 +1,10 @@
-#Silnia 4!= 1 * 2 * 3 * 4
-def silnia(n):
-    if n <= 0:
-        return 1
-    else:
-        return n*silnia(n-1)
+import unittest
+import Algorithm_Euklidesa
+import Algorithm_Ekulidesa_recursion
 
-print(silnia(4))
-
-def fibon(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibon(n-1) + fibon(n-2)
-
-print(fibon(4))
+class Test(unittest.TestCase):
+    def test_Eukalides(self):
+        self.assertEqual(Algorithm_Ekulidesa_recursion.NWD(150,240),30)
+        self.assertEqual(Algorithm_Ekulidesa_recursion.NWD(24,36),12)
+        self.assertEqual(Algorithm_Euklidesa.Euklides(150,240),30)
+        self.assertEqual(Algorithm_Euklidesa.Euklides(24,36),12)

@@ -3,4 +3,3 @@ def NWD(a, b):
         return NWD(b, a % b)
     return a
 
-print(NWD(150,240))
