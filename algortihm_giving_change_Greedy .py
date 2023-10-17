@@ -8,4 +8,4 @@ def greedy_change(cash):
             print(f"{banknotes[x]} X {integer}")
 
 
-greedy_change(140)
+greedy_change(10)
